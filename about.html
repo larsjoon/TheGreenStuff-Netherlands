@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - The Green Stuff</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom animations for the site */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-down {
+            animation: fadeInDown 0.8s ease-out forwards;
+        }
+
+        /* Ensure font is applied globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen bg-gradient-to-br from-green-50 to-emerald-100 font-inter text-gray-800 flex flex-col">
+        <!-- Header -->
+        <header class="bg-white bg-opacity-90 shadow-md py-4 px-6 md:px-12 flex justify-between items-center rounded-b-xl">
+            <div class="flex items-center space-x-3">
+                <span class="text-3xl text-emerald-600">🌿</span> <!-- Eco icon -->
+                <h1 class="text-3xl font-bold text-green-700">The Green Stuff</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li>
+                        <a href="index.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">
+                            About Us
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-gray-600 hover:text-green-600 font-medium transition-colors duration-200">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-6 py-12 md:py-20 flex flex-col items-center justify-center text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-green-800 leading-tight mb-6 animate-fade-in-down">
+                About The Green Stuff
+            </h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl">
+                At The Green Stuff, we are driven by a singular vision: to foster a truly self-sustainable future through groundbreaking products and a commitment to ecological harmony. We believe in designing solutions that not only meet today's needs but also preserve the planet for generations to come.
+            </p>
+            <p class="text-lg text-gray-600 max-w-3xl">
+                Our journey is rooted in innovation, ethical practices, and a deep respect for natural resources. We are diligently working behind the scenes to bring you a curated selection of items that embody these values. Stay tuned as we prepare to unveil a new era of conscious consumption.
+            </p>
+            <a href="index.html" class="mt-12 inline-block bg-emerald-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-emerald-600 transition-all duration-300 transform hover:scale-105">
+                Back to Home
+            </a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-green-800 text-white py-8 px-6 md:px-12 text-center rounded-t-xl">
+            <p class="text-lg mb-4">
+                "Innovating for a Greener Tomorrow, Today."
+            </p>
+            <p class="text-sm">
+                &copy; 2025 The Green Stuff. All rights reserved.
+            </p>
+            <p class="text-sm mt-2">
+                Committed to sustainability, circularity, and a healthier planet.
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
