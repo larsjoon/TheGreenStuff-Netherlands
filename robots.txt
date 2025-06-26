@@ -1,0 +1,17 @@
+# robots.txt for The Green Stuff
+# This file provides directives for web robots.
+
+# Allow crawling of all content on the site
+User-agent: *
+Allow: /
+
+# --- CTF Secret ---
+# Sometimes, the path to discovery is hidden in plain sight.
+# Look closely at the "disallowed" areas... but perhaps not in the usual way.
+# Disallow: /admin/
+# Disallow: /temp/
+# Disallow: /secret-area-for-devs/
+# The flag is: CTF{Eco_Conscious_Crawler_Found_Me!}
+# --- End CTF Secret ---
+
+# More directives can go here
